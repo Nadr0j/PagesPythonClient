@@ -8,7 +8,6 @@ Name | Type | Description | Notes
 **user** | **str** |  | 
 **namespace** | **str** |  | 
 **name** | **str** |  | 
-**content** | **str** |  | 
 
 ## Example
 
