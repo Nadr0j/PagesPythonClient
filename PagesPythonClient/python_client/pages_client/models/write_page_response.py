@@ -29,8 +29,7 @@ class WritePageResponse(BaseModel):
     user: StrictStr
     namespace: StrictStr
     name: StrictStr
-    content: StrictStr
-    __properties: ClassVar[List[str]] = ["user", "namespace", "name", "content"]
+    __properties: ClassVar[List[str]] = ["user", "namespace", "name"]
 
     model_config = ConfigDict(
         populate_by_name=True,
@@ -85,8 +84,7 @@ class WritePageResponse(BaseModel):
         _obj = cls.model_validate({
             "user": obj.get("user"),
             "namespace": obj.get("namespace"),
-            "name": obj.get("name"),
-            "content": obj.get("content")
+            "name": obj.get("name")
         })
         return _obj
 
