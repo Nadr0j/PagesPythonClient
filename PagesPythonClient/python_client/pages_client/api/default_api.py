@@ -375,7 +375,7 @@ class DefaultApi:
         )
 
         _response_types_map: Dict[str, Optional[str]] = {
-            '202': "WritePageResponse",
+            '200': "WritePageResponse",
             '400': "Error",
             '500': "Error",
         }
@@ -444,7 +444,7 @@ class DefaultApi:
         )
 
         _response_types_map: Dict[str, Optional[str]] = {
-            '202': "WritePageResponse",
+            '200': "WritePageResponse",
             '400': "Error",
             '500': "Error",
         }
@@ -513,7 +513,7 @@ class DefaultApi:
         )
 
         _response_types_map: Dict[str, Optional[str]] = {
-            '202': "WritePageResponse",
+            '200': "WritePageResponse",
             '400': "Error",
             '500': "Error",
         }

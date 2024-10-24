@@ -145,7 +145,7 @@ No authorization required
 
 | Status code | Description | Response headers |
 |-------------|-------------|------------------|
-**202** | Successfully written or updated a page. |  -  |
+**200** | Successfully written or updated a page. |  -  |
 **400** | Invalid input, object invalid. |  -  |
 **500** | Internal server error. |  -  |
 
