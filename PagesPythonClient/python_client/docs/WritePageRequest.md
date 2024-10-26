@@ -9,6 +9,7 @@ Name | Type | Description | Notes
 **namespace** | **str** |  | 
 **name** | **str** |  | 
 **content** | **str** |  | 
+**overwrite_existing** | **bool** |  | [optional] 
 
 ## Example
 

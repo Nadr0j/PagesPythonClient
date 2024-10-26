@@ -17,8 +17,8 @@ import pprint
 import re  # noqa: F401
 import json
 
-from pydantic import BaseModel, ConfigDict, StrictStr
-from typing import Any, ClassVar, Dict, List
+from pydantic import BaseModel, ConfigDict, Field, StrictBool, StrictStr
+from typing import Any, ClassVar, Dict, List, Optional
 from typing import Optional, Set
 from typing_extensions import Self
 
@@ -30,7 +30,8 @@ class WritePageRequest(BaseModel):
     namespace: StrictStr
     name: StrictStr
     content: StrictStr
-    __properties: ClassVar[List[str]] = ["user", "namespace", "name", "content"]
+    overwrite_existing: Optional[StrictBool] = Field(default=None, alias="overwriteExisting")
+    __properties: ClassVar[List[str]] = ["user", "namespace", "name", "content", "overwriteExisting"]
 
     model_config = ConfigDict(
         populate_by_name=True,
@@ -86,7 +87,8 @@ class WritePageRequest(BaseModel):
             "user": obj.get("user"),
             "namespace": obj.get("namespace"),
             "name": obj.get("name"),
-            "content": obj.get("content")
+            "content": obj.get("content"),
+            "overwriteExisting": obj.get("overwriteExisting")
         })
         return _obj
 
