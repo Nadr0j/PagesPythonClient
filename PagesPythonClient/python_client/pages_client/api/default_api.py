@@ -377,6 +377,7 @@ class DefaultApi:
         _response_types_map: Dict[str, Optional[str]] = {
             '200': "WritePageResponse",
             '400': "Error",
+            '409': "Error",
             '500': "Error",
         }
         response_data = self.api_client.call_api(
@@ -446,6 +447,7 @@ class DefaultApi:
         _response_types_map: Dict[str, Optional[str]] = {
             '200': "WritePageResponse",
             '400': "Error",
+            '409': "Error",
             '500': "Error",
         }
         response_data = self.api_client.call_api(
@@ -515,6 +517,7 @@ class DefaultApi:
         _response_types_map: Dict[str, Optional[str]] = {
             '200': "WritePageResponse",
             '400': "Error",
+            '409': "Error",
             '500': "Error",
         }
         response_data = self.api_client.call_api(
